@@ -1,16 +1,23 @@
 {
-    "name": "hexlet/code",
-    "description": "Hexlet project: Brain Games",
-    "type": "project",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Howstung"
-        }
-    ],
-    "bin": [
-        "bin/brain-games"
-    ],
-    "minimum-stability": "stable",
-    "require": {}
+  "name": "hexlet/code",
+  "description": "Hexlet project: Brain Games",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Howstung"
+    }
+  ],
+  "bin": [
+    "bin/brain-games"
+  ],
+  "autoload": {
+    "files": [
+      "src/Cli.php"
+    ]
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "wp-cli/php-cli-tools": "^0.11.22"
+  }
 }
