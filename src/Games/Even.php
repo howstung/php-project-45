@@ -6,7 +6,7 @@ use function BrainGames\Engine\makeGame as makeGame;
 use function BrainGames\Utils\getRandom as getRandom;
 use function BrainGames\Utils\isEven as isEven;
 
-function gameEven()
+function gameEven(): void
 {
     $makeQA = function () {
         $randNum = getRandom(1, 100);

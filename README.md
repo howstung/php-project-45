@@ -43,4 +43,13 @@
 [![asciicast](https://asciinema.org/a/ecFtuxuI5Xv7oA5LfOoVnw2AY.svg)](https://asciinema.org/a/ecFtuxuI5Xv7oA5LfOoVnw2AY)
 
 
+#### 4. Brain Progression:
+
+##### Win:
+
+[![asciicast](https://asciinema.org/a/gWPwMsdvybebJQcwQZfJQzXav.svg)](https://asciinema.org/a/gWPwMsdvybebJQcwQZfJQzXav)
+
+#### Fail:
+
+[![asciicast](https://asciinema.org/a/9PK5Hz38tc2uMDeKVhg3S3ffF.svg)](https://asciinema.org/a/9PK5Hz38tc2uMDeKVhg3S3ffF)
 

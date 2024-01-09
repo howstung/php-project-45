@@ -6,7 +6,7 @@ use function BrainGames\Engine\makeGame as makeGame;
 use function BrainGames\Utils\getRandom as getRandom;
 use function BrainGames\Utils\getGCD as getGCD;
 
-function gameGCD()
+function gameGCD(): void
 {
     $makeQA = function () {
         $randNum1 = getRandom(1, 100);
