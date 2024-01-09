@@ -32,3 +32,15 @@
 
 [![asciicast](https://asciinema.org/a/AlLugg1rkZCrOekI1ReZ6I8F0.svg)](https://asciinema.org/a/AlLugg1rkZCrOekI1ReZ6I8F0)
 
+#### 3. Brain GCD:
+
+##### Win:
+
+[![asciicast](https://asciinema.org/a/oOvgeqanMeiCIApSHJqOG2IBT.svg)](https://asciinema.org/a/oOvgeqanMeiCIApSHJqOG2IBT)
+
+#### Fail:
+
+[![asciicast](https://asciinema.org/a/ecFtuxuI5Xv7oA5LfOoVnw2AY.svg)](https://asciinema.org/a/ecFtuxuI5Xv7oA5LfOoVnw2AY)
+
+
+
