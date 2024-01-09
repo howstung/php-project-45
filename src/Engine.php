@@ -7,8 +7,6 @@ use function cli\line as line;
 use function cli\prompt as prompt;
 
 const NEED_CNT_WIN_GAMES = 3;
-const TEXT_GAME_WIN = "Congratulations";
-const TEXT_GAME_FAIL = "Let's try again";
 
 function makeListQuestions(callable $makeQA): array
 {
@@ -23,18 +21,11 @@ function makeListQuestions(callable $makeQA): array
     return $arrQuestions;
 }
 
-function makeGame(string $textGameRules, callable $makeQA): void
+function Game($ind, $arrQuestions): callable
 {
-    $name = Hello();
-    line($textGameRules);
-    $cntRightAnswers = 0;
-
-    $arrQuestions = makeListQuestions($makeQA);
-
-    //Gaming loop
-    $Game = function (int $ind) use ($arrQuestions): bool {
+    return function () use ($ind, $arrQuestions): bool {
         $currentQuest = $arrQuestions[$ind];
-        line('Question: ' . $currentQuest['question']);
+        line('Question: %s', $currentQuest['question']);
         $userAnswer = prompt('Your answer');
         $rightAnswer = $currentQuest['answer'];
         if (
@@ -43,22 +34,28 @@ function makeGame(string $textGameRules, callable $makeQA): void
             line('Correct!');
             return true;
         } else {
-            line("'{$userAnswer}' is wrong answer ;(. Correct answer was '{$rightAnswer}'.");
+            line("'%s' is wrong answer ;(. Correct answer was '%s'.", $userAnswer, $rightAnswer);
             return false;
         }
     };
+}
 
+function makeGame(string $textGameRules, callable $makeQA): void
+{
+    $name = Hello();
+    line($textGameRules);
+    $cntRightAnswers = 0;
+    $arrQuestions = makeListQuestions($makeQA);
+
+    //Gaming loops
     for ($i = 0; $i < NEED_CNT_WIN_GAMES; $i++) {
-        $resultGame = $Game($i);
+        $resultGame = Game($i, $arrQuestions)();
         $cntRightAnswers = ($resultGame) ? $cntRightAnswers + 1 : $cntRightAnswers;
         if (!$resultGame) {
+            line("Let's try again, %s!", $name);
             break;
+        } elseif ($cntRightAnswers === NEED_CNT_WIN_GAMES) {
+            line("Congratulations, %s!", $name);
         }
-    }
-
-    if ($cntRightAnswers === NEED_CNT_WIN_GAMES) {
-        line(TEXT_GAME_WIN . ", {$name}!");
-    } else {
-        line(TEXT_GAME_FAIL . ", {$name}!");
     }
 }

@@ -1,11 +1,12 @@
 {
   "name": "hexlet/code",
-  "description": "Hexlet project: Brain Games",
+  "description": "Hexlet PHP project: Brain Games",
   "type": "project",
   "license": "MIT",
   "authors": [
     {
-      "name": "Howstung"
+      "name": "Howstung",
+      "email": "howstung@gmail.com"
     }
   ],
   "bin": [

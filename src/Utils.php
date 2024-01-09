@@ -2,12 +2,12 @@
 
 namespace BrainGames\Utils;
 
-function isEven($num): bool
+function isEven(int $num): bool
 {
     return $num % 2 === 0;
 }
 
-function isPrime($num): bool
+function isPrime(int $num): bool
 {
     $multi = getSimpleMultipliers($num);
     return match (count($multi)) {
@@ -16,7 +16,7 @@ function isPrime($num): bool
     };
 }
 
-function getRandom($min, $max): int
+function getRandom(int $min, int $max): int
 {
     return rand($min, $max);
 }
@@ -45,7 +45,7 @@ function getSimpleMultipliers(int $num): array
     return $multi;
 }
 
-function getGCD($num1, $num2): int
+function getGCD(int $num1, int $num2): int
 {
     $multi1 = getSimpleMultipliers($num1);
     $multi2 = getSimpleMultipliers($num2);
