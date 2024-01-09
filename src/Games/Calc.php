@@ -15,7 +15,7 @@ function gameCalc(): void
         $randOperator = $operands[getRandom(0, count($operands) - 1)];
         $rightAnswer = calc($randNum1, $randNum2, $randOperator);
         return [
-            "question" => "{$randNum1}{$randOperator}{$randNum2}",
+            "question" => "{$randNum1} {$randOperator} {$randNum2}",
             "answer" => $rightAnswer
         ];
     };
