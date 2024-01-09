@@ -49,13 +49,16 @@ function getGCD(int $num1, int $num2): int
 {
     $multi1 = getSimpleMultipliers($num1);
     $multi2 = getSimpleMultipliers($num2);
+    $cmnMulti = [];
     $commonMultipliers = array_reduce($multi1, function ($acc, $num) use (&$multi1, &$multi2) {
-        if (in_array($num, $multi2)) {
+        if (in_array($num, $multi2, true)) {
             $acc[] = $num;
-            array_splice($multi1, array_search($num, $multi1), 1);
-            array_splice($multi2, array_search($num, $multi2), 1);
+            $f1 = (int)array_search($num, $multi1, true);
+            $f2 = (int)array_search($num, $multi2, true);
+            array_splice($multi1, $f1, 1);
+            array_splice($multi2, $f2, 1);
         }
         return $acc;
-    }, []);
+    }, $cmnMulti);
     return array_reduce($commonMultipliers, fn($res, $num) => ($res * $num), 1);
 }

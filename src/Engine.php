@@ -21,7 +21,7 @@ function makeListQuestions(callable $makeQA): array
     return $arrQuestions;
 }
 
-function Game($ind, $arrQuestions): callable
+function Game(int $ind, array $arrQuestions): callable
 {
     return function () use ($ind, $arrQuestions): bool {
         $currentQuest = $arrQuestions[$ind];
