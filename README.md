@@ -8,16 +8,27 @@
 
 ### Asciinema
 
-#### Install game
+#### Install game:
 
-https://asciinema.org/a/MwdynJzcmkERvXV5lehdxVZsQ
+[![asciicast](https://asciinema.org/a/v92l6EZ8ikYNWvZhobJWToB1W.svg)](https://asciinema.org/a/v92l6EZ8ikYNWvZhobJWToB1W)
 
 #### 1. Brain Even:
 
-##### Win
+##### Win:
 
-https://asciinema.org/a/NtOaFJQsb4kTkmO3559OOBhis
+[![asciicast](https://asciinema.org/a/HBjpEMqrzSdxhb1vYcrqGiVhi.svg)](https://asciinema.org/a/HBjpEMqrzSdxhb1vYcrqGiVhi)
 
-#### Fail
+#### Fail:
 
-https://asciinema.org/a/JWRtkzjN1jKQMe5Nl3lePY9yn
+[![asciicast](https://asciinema.org/a/aQRSeQUMEfPJZAUcHJ5fwjsjS.svg)](https://asciinema.org/a/aQRSeQUMEfPJZAUcHJ5fwjsjS)
+
+#### 2. Brain Calc:
+
+##### Win:
+
+[![asciicast](https://asciinema.org/a/X6BUAVdLzzFhgg8dMbFTfugkt.svg)](https://asciinema.org/a/X6BUAVdLzzFhgg8dMbFTfugkt)
+
+#### Fail:
+
+[![asciicast](https://asciinema.org/a/AlLugg1rkZCrOekI1ReZ6I8F0.svg)](https://asciinema.org/a/AlLugg1rkZCrOekI1ReZ6I8F0)
+
