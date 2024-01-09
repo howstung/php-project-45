@@ -42,7 +42,6 @@
 
 [![asciicast](https://asciinema.org/a/ecFtuxuI5Xv7oA5LfOoVnw2AY.svg)](https://asciinema.org/a/ecFtuxuI5Xv7oA5LfOoVnw2AY)
 
-
 #### 4. Brain Progression:
 
 ##### Win:
@@ -52,4 +51,14 @@
 #### Fail:
 
 [![asciicast](https://asciinema.org/a/9PK5Hz38tc2uMDeKVhg3S3ffF.svg)](https://asciinema.org/a/9PK5Hz38tc2uMDeKVhg3S3ffF)
+
+#### 5. Brain Prime:
+
+##### Win:
+
+[![asciicast](https://asciinema.org/a/gnKhlMsvrazQnkqeLSGctgzgC.svg)](https://asciinema.org/a/gnKhlMsvrazQnkqeLSGctgzgC)
+
+#### Fail:
+
+[![asciicast](https://asciinema.org/a/NnjwFVz2PYy49yT1VDX6m0MJt.svg)](https://asciinema.org/a/NnjwFVz2PYy49yT1VDX6m0MJt)
 

@@ -7,6 +7,15 @@ function isEven($num): bool
     return $num % 2 === 0;
 }
 
+function isPrime($num): bool
+{
+    $multi = getSimpleMultipliers($num);
+    return match (count($multi)) {
+        2 => true,
+        default => false,
+    };
+}
+
 function getRandom($min, $max): int
 {
     return rand($min, $max);
