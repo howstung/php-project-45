@@ -31,8 +31,5 @@ function gameArithmProgress(): void
         ];
     };
 
-    makeGame(
-        'What number is missing in the progression?',
-        $makeQA
-    );
+    makeGame('What number is missing in the progression?', $makeQA);
 }
